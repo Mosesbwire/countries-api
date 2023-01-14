@@ -145,3 +145,18 @@ fieldset {
     font-size: 1em;
 }
 
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+.flex {
+    display: flex;
+}
+.flex-space-btwn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-mobile-column {
+    flex-direction: column;
+}

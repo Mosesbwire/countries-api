@@ -6,7 +6,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 const Filter = props => {
   return (
     <div>
-      <div>
+      <div className='flex-space-btwn'>
         <p>Filter by Region</p>
         <FontAwesomeIcon icon={faAngleDown}/>
       </div>

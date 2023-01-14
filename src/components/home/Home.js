@@ -7,7 +7,7 @@ import Country from './Country'
 const Home = props => {
   return (
     <div>
-        <div>
+        <div className='flex flex-mobile-column'>
             <Search/>
             <Filter/>
         </div>
