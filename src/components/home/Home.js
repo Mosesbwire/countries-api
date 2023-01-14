@@ -13,6 +13,21 @@ const Home = props => {
         </div>
         <div className='country-grid'>
             <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
+            <Country/>
         </div>
     </div>
   )
