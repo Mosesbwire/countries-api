@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --dark-mode-blue-elements: hsl(209, 23%, 22%);
+    --dark-mode-background: hsl(207, 26%, 17%);
+    --light-mode-primary-text: hsl(200, 15%, 8%);
+    --light-mode-secondary-text: hsl(0, 0%, 52%);
+    --light-mode-background: hsl(0, 0%, 98%);
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -50,6 +60,7 @@ html, body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'Nunito Sans', sans-serif;
 
 }
 
@@ -91,5 +102,46 @@ fieldset {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.dark {
+    background-color: var(--dark-mode-background);
+    color: var(--white);
+}
+.dark-secondary-text {
+    color: var(--light-mode-secondary-text);
+}
+
+.light {
+    background-color: var(--light-mode-background);
+    color: var(--light-mode-primary-text);
+}
+
+.light-text {
+    color: var(--light-mode-secondary-text);
+}
+
+.xlg-text {
+    font-weight: 800;
+    font-size: 2em;
+}
+.lg-text {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.md-text-bold {
+    font-weight: 600;
+    font-size: 1.35em;
+}
+
+.text-light {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.text-bold {
+    font-weight: 400;
+    font-size: 1em;
 }
 
