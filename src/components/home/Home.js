@@ -7,11 +7,11 @@ import Country from './Country'
 const Home = props => {
   return (
     <div>
-        <div className='flex flex-mobile-column'>
+        <div className='flex flex-mobile-column search-filter'>
             <Search/>
             <Filter/>
         </div>
-        <div>
+        <div className='country-grid'>
             <Country/>
         </div>
     </div>

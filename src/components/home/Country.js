@@ -3,22 +3,22 @@ import PropTypes from 'prop-types'
 
 const Country = props => {
   return (
-    <div>
-      <div>
-        <p>Flag section</p>
+    <div className='card'>
+      <div className='flag'>
+        
       </div>
-      <div>
-        <p>Germany</p>
-        <div>
-            <p>Population</p>
+      <div className='country-details'>
+        <p className='lg-text country-name'>Germany</p>
+        <div className='flex card-details'>
+            <p className='text-bold'>Population:</p>
             <p>81,770,900</p>
         </div>
-        <div>
-            <p>Region</p>
+        <div className='flex card-details'>
+            <p className='text-bold'>Region:</p>
             <p>Europe</p>
         </div>
-        <div>
-            <p>Capital</p>
+        <div className='flex card-details'>
+            <p className='text-bold'>Capital:</p>
             <p>Berlin</p>
         </div>
       </div>

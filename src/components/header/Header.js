@@ -7,12 +7,12 @@ import { faSun, faMoon} from '@fortawesome/free-solid-svg-icons'
 const Header = props => {
   return (
     <div className='header'>
-      <div className='flex-space-btwn'>
-        <p>Where in the world</p>
+      <div className='flex-space-btwn container header-container'>
+        <p className='lg-text'>Where in the world ?</p>
         <div>
-            <div className='flex'>
+            <div className='flex mode-icon'>
               <FontAwesomeIcon icon={faSun}/>
-              <p>Light Mode</p>
+              <p className='mode-icon-text'>Light Mode</p>
             </div>
             {/* <div className='flex'>
               <FontAwesomeIcon icon={faMoon}/>

@@ -88,6 +88,10 @@ fieldset {
     border: 0;
 }
 
+input:focus{
+    outline: none;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -127,7 +131,7 @@ fieldset {
 }
 .lg-text {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .md-text-bold {
@@ -141,12 +145,12 @@ fieldset {
 }
 
 .text-bold {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1em;
 }
 
 .container {
-    width: 90%;
+    width: 92%;
     margin-inline: auto;
 }
 .flex {
@@ -159,4 +163,119 @@ fieldset {
 
 .flex-mobile-column {
     flex-direction: column;
+
 }
+
+
+
+/*----------------- Header styles -------------------------------*/
+
+.header {
+    padding-block: 1em;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    background-color: var(--white);
+}
+.header-container {
+    align-items: center;
+}
+.mode-icon {
+    align-items: center;
+}
+.mode-icon-text {
+    font-weight: 600;
+    font-size: .85em;
+    margin-left: .75em;
+}
+/* -------------------------search input --------------------------------- */
+.search-box {
+    padding-block: .5em;
+    padding-inline-start: 2em;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .1), -1px -1px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
+.mag-glass {
+    color: var(--light-mode-secondary-text);
+}
+
+.input {
+    border: none;
+    margin-left: 2em;
+    width: 70%;
+}
+
+.search-filter {
+    width: 92%;
+    margin-inline: auto;
+    position: relative;
+}
+
+.search-filter > :first-child {
+    margin-block-end: 2.5em;   
+    margin-block-start: 2em;
+}
+
+/* ----------------------------- filter section ------------------------ */
+
+.filter {
+    width: 60%;
+    position: absolute;
+    top: 100%;
+}
+
+.filter-heading {
+    align-items: center;
+    padding-block: .5em;
+    background-color: var(--white);
+    padding-inline-start: 2em;
+    padding-inline-end: 1em;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
+    margin-bottom: .3em;
+    border-radius: 5px;
+}
+
+.regions {
+    padding-inline-start: 2em;
+    background-color: var(--white);
+    padding-block: .5em;
+    box-shadow: -1px -1px 5px 1px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+
+.regions > * {
+    margin-block: .5em;
+}
+
+/* -----------------country card section -------------------- */
+
+.country-grid {
+    margin-top: 5em;
+}
+
+.card {
+    width: 75%;
+    margin-inline: auto;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
+}
+
+.flag {
+    background-color: salmon;
+    height: 150px;
+}
+
+.country-name {
+    margin-bottom: 1em;
+}
+.card-details > :first-child {
+    margin-bottom: .35em;
+}
+.country-details {
+    padding-inline: 1em;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
+}
+
+

@@ -5,12 +5,12 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 const Filter = props => {
   return (
-    <div>
-      <div className='flex-space-btwn'>
+    <div className='filter'>
+      <div className='flex-space-btwn filter-heading'>
         <p>Filter by Region</p>
         <FontAwesomeIcon icon={faAngleDown}/>
       </div>
-      <div>
+      <div className='regions'>
         <p>Africa</p>
         <p>America</p>
         <p>Asia</p>
