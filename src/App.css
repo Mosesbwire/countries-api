@@ -304,6 +304,7 @@ input:focus{
 
 .details-section {
     padding-top: 4em;
+    display: grid;
 }
 
 .country-details-flag {
@@ -393,4 +394,44 @@ input:focus{
         column-gap: 3em;
         box-shadow: 1px 1px rgba(0, 0, 0, .1);
     }
+
+    /* ----------------------- COUNTRY DETAILS ---------------------------------------- */
+    .details-page {
+        padding-inline: 0; 
+    }
+    .details-section {
+        grid-template-columns: 40% 50%;
+        column-gap: 5em; 
+        
+    }
+
+   
+
+    .country-full-details {
+        margin-top: 1em;
+        
+    }
+    .country-details-flag {
+        margin-bottom: 0;
+    }
+
+
+    .border-neighbours {
+        align-items: center;
+        
+    }
+    .border-title {
+       margin-right: .75em;
+    }
+
+    .border-grid {
+        margin-top: 0;
+    }
+
+    .neighbour {
+        padding-inline: 1em;
+    }
+
+    
+
 }

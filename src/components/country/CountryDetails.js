@@ -7,14 +7,14 @@ const CountryDetails = props => {
   return (
     <div className='container details-page'>
       <button className='btn'><FontAwesomeIcon icon={faArrowLeft} className='btn-icon'/> Back</button>
-      <div className='flex flex-mobile-column details-section'>
+      <div className='details-section'>
         <div className='country-details-flag'>
             <p>FLAG</p>
         </div>
-        <div>
+        <div className='country-full-details-container'>
             <p className='xlg-text'>Belgium</p>
             <div className='country-full-details'>
-                <div className='flex flex-mobile-column'>
+                <div className='flex-space-btwn flex-mobile-column'>
                     <div className='geographic-details'>
                       <div className='flex'>
                           <p className='text-bold'>Native Name:</p>
@@ -70,12 +70,7 @@ const CountryDetails = props => {
                       <div className='neighbour'>
                         <p>Netherlands</p>
                       </div>
-                      <div className='neighbour'>
-                        <p>Netherlands</p>
-                      </div>
-                      <div className='neighbour'>
-                        <p>Netherlands</p>
-                      </div>
+                      
                     </div>
                 </div>
           
