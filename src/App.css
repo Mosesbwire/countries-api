@@ -269,7 +269,13 @@ input:focus{
 
 .flag {
     background-color: salmon;
-    height: 150px;
+    width: 100%;
+    
+}
+
+.flag-img-card {
+    width: 100%;
+    height: 100%;
 }
 
 .country-name {
@@ -383,6 +389,8 @@ input:focus{
         width: 200%;
     }
 
+    /* ----country card -----home page */
+
     .country-grid {
         position: relative;
         z-index: 1;
@@ -393,6 +401,14 @@ input:focus{
         row-gap: 3em;
         column-gap: 3em;
         box-shadow: 1px 1px rgba(0, 0, 0, .1);
+    }
+
+    .flag {
+        height: 200px;
+    }
+
+    .flag-img-card {
+        object-fit: cover;
     }
 
     /* ----------------------- COUNTRY DETAILS ---------------------------------------- */
