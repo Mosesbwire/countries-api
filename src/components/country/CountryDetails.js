@@ -85,7 +85,7 @@ const CountryDetails = ({countries}) => {
                       </div>
                       <div className='flex'>
                           <p className='text-bold'>Languages:</p>
-                          <div className='flex'>
+                          <div className='language-grid'>
                             {Object.values(country[0].languages).map(language =>(<p>{language}</p>))}
                           </div>
                       </div>
