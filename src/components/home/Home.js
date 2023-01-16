@@ -5,12 +5,12 @@ import Search from './Search'
 import Filter from './Filter'
 import Country from './Country'
 
-const Home = ({countries, setRegion}) => {
+const Home = ({countries, setRegion, setQuery}) => {
   
   return countries == null ? <p>Loading.....</p> : 
     <div>
         <div className='flex flex-mobile-column search-filter'>
-            <Search/>
+            <Search setQuery={setQuery}/>
             <Filter setRegion={setRegion}/>
         </div>
         <div className='country-grid'>
@@ -27,5 +27,6 @@ const Home = ({countries, setRegion}) => {
 Home.propTypes = {
   countries: PropTypes.array,
   setRegion: PropTypes.func,
+  setQuery: PropTypes.func,
 }
 export default Home

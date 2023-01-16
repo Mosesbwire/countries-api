@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
@@ -40,6 +40,7 @@ const CountryDetails = ({countries}) => {
   const onClick = ()=>{
     setCountry(null)
   }
+  
 
   return (country == null ? <p>Loading...</p> :
     <div className='container details-page'>
