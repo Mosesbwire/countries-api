@@ -10,6 +10,7 @@ const API_URL = 'https://restcountries.com/v3.1/all'
 
 function App() {
   const [countries, setCountries] = useState(null)
+  const [region,setRegion] = useState('')
   
   useEffect(()=>{
     const getAllCountries = async () =>{
@@ -20,12 +21,24 @@ function App() {
     getAllCountries();
   }, [])
 
+  useEffect(()=>{
+    setCountries(null)
+    const getRegionCountries = async () =>{
+      if (region.length > 0){
+        const res = await axios.get(`https://restcountries.com/v3.1/region/${region}`)
+        setCountries(res.data)
+      }
+    }
+
+    getRegionCountries()
+  }, [region])
+
   return (
     <div className="App light">
     <BrowserRouter>
      <Header/>
     <Routes>
-      <Route path='/' element={<Home countries={countries}/>}/>
+      <Route path='/' element={<Home countries={countries} setRegion={setRegion} region={region}/>}/>
       <Route path='/country/:countryCode' element={<CountryDetails countries={countries}/>}/>
     </Routes>
     </BrowserRouter>

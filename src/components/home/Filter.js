@@ -3,10 +3,15 @@ import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
-const Filter = props => {
+const Filter = ({setRegion}) => {
   const [isOpen, setIsOpen] = useState(false)
   const openFilter = () => {
-    console.log('clicked')
+    
+    setIsOpen(!isOpen)
+  }
+
+  const onClick = (e)=>{
+    setRegion(e.target.innerText)
     setIsOpen(!isOpen)
   }
   return (
@@ -17,11 +22,11 @@ const Filter = props => {
       </div>
       {isOpen ?
       <div className='regions'>
-        <p>Africa</p>
-        <p>America</p>
-        <p>Asia</p>
-        <p>Europe</p>
-        <p>Ocenia</p>
+        <p onClick={e => onClick(e)}>Africa</p>
+        <p onClick={e => onClick(e)}>America</p>
+        <p onClick={e => onClick(e)}>Asia</p>
+        <p onClick={e => onClick(e)}>Europe</p>
+        <p onClick={e => onClick(e)}>Oceania</p>
       </div> : null
       }
     </div>
@@ -29,7 +34,7 @@ const Filter = props => {
 }
 
 Filter.propTypes = {
-
+  setRegion: PropTypes.func,
 }
 
 export default Filter
