@@ -257,7 +257,6 @@ input:focus{
     row-gap: 2em;
     width: 75%;
     margin-inline: auto;
-
 }
 
 .card {
@@ -315,8 +314,12 @@ input:focus{
 
 .country-details-flag {
     height: 300px;
-    background-color: brown;
     margin-bottom: 2.5em;
+}
+
+.country-details-flag > img {
+    object-fit: cover;
+    height: 100%;
 }
 
 .country-full-details {
@@ -379,9 +382,11 @@ input:focus{
     }
 
     .filter {
-        position: relative;
-        width: 20% ;
+        width: 20%;
         z-index: 100;
+        cursor: pointer;
+        left: 80%;
+        top: 0;
     }
 
     .search-box {
@@ -395,7 +400,7 @@ input:focus{
         position: relative;
         z-index: 1;
         width: 92%;
-        margin-top: 0;
+        margin-top: 180px;
         top: -135px;
         grid-template-columns: repeat(4, 1fr);
         row-gap: 3em;

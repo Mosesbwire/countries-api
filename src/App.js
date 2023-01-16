@@ -1,4 +1,5 @@
 import  React, {useEffect, useState} from 'react'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import axios from 'axios'
 import Header from './components/header/Header';
 import Home from './components/home/Home';
@@ -19,13 +20,17 @@ function App() {
     getAllCountries();
   }, [])
 
-
   return (
     <div className="App light">
-      
+    <BrowserRouter>
      <Header/>
-     <Home countries={countries}/>
-     {/* <CountryDetails/> */}
+    <Routes>
+      <Route path='/' element={<Home countries={countries}/>}/>
+      <Route path='/country/:countryCode' element={<CountryDetails countries={countries}/>}/>
+    </Routes>
+    </BrowserRouter>
+     
+  
     </div>
   );
 }

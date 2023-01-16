@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import Search from './Search'
 import Filter from './Filter'
@@ -14,8 +15,9 @@ const Home = ({countries}) => {
         </div>
         <div className='country-grid'>
           {countries.map((country, index) => (
-            
-            <Country key={index} country={country}/>
+            <Link to={`country/${country.cca2}`}>
+              <Country key={index} country={country}/>
+            </Link>
           ))}
         </div>
     </div>

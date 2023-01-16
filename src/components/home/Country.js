@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Country = ({country})=> {
-  console.log(country)
+  
   return (
     <div className='card'>
       <div className='flag'>
